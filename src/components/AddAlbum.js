@@ -14,8 +14,6 @@ const AddAlbum = (props) => {
     <>
       {/* navber */}
       <Navbar path="/" page="Home" />
-
-
       <div className='addalbum-container'>
         <div className='addalbum-form'>
           <h4>Enter New Album Details</h4>
