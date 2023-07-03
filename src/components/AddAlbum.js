@@ -10,7 +10,6 @@ const AddAlbum = (props) => {
     const title = document.getElementById('aaform-title-inp').value;
     props.addAlbumToList(Number(userId), title)
   }
-
   return (
     <>
       {/* navber */}
