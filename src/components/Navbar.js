@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-//get button name and path for evaery component
+//get the button name and path for every component
+
 const Navbar = (props) => {
 
   return (
@@ -14,5 +15,4 @@ const Navbar = (props) => {
     </div>
   )
 }
-
 export default Navbar
