@@ -26,6 +26,7 @@ button{
 
 
 /* Navbar component style */
+
 .navbar{
     width: 100%;
     padding: 20px 10px;
@@ -34,14 +35,17 @@ button{
     justify-content: space-between;
     position: fixed;
 }
+
 .navbar h2{
     background-color: #FD0102;
     width: fit-content;
     padding: 2px;
 }
+
 .brand-first-half{
     margin-right: 2px;
 }
+
 .brand-last-half{
     background-color: #000000;
     color: #FD0102;
@@ -54,6 +58,7 @@ button{
     padding: 5px 10px;
     cursor: pointer;
 }
+
 .navbar button:hover{
     background-color: #FD0102;
     color: white;
@@ -97,10 +102,12 @@ button{
     padding: 10px 20px;
     cursor: pointer;
 }
+
 .update-btn:hover{
     background-color: white;
     color: black;
 }
+
 .delete-btn{
     cursor: pointer;
     border: 0px;
@@ -114,6 +121,7 @@ button{
 }
 
 /* UpdateAlbum component style */
+
 .update-album{
     width: 350px;
     margin: auto;
@@ -135,12 +143,14 @@ button{
 }
 
 /* addAlbum container style */
+
 .addalbum-container{
     color: white;
     padding-top: 73px;
     width: 350px;
     margin: auto;
 }
+
 .addalbum-form{
     padding: 10px;
     background-color: #478AC9;
