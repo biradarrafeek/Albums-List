@@ -2,9 +2,11 @@ import React from 'react'
 import List from './List'
 import Navbar from './Navbar'
 
-//get all albums list from app and then call list component for each list on the albums
+//get all albums list from the app and then call the list component for each list on the albums
+
 const AlbumsList = (props) => {
   return (
+    
     <>
       {/* Navbar */}
       <Navbar page="Add Album" path="/add-album" />
@@ -15,5 +17,4 @@ const AlbumsList = (props) => {
     </>
   )
 }
-
 export default AlbumsList
