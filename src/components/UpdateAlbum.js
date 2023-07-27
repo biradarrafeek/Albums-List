@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Navbar from './Navbar';
 
-const UpdateAlbum = (props) => {
-  
+const UpdateAlbum = (props) => { 
   const getUpdateData = () => {
     const id = props.album.id;
     let updateTitle = document.getElementById('title-inp').value;
@@ -12,6 +11,7 @@ const UpdateAlbum = (props) => {
     if (updateTitle === '') {
       updateTitle = props.album.title;
     }
+    
     if (updateUserid === '') {
       updateUserid = props.album.userId;
     }
@@ -29,12 +29,14 @@ const UpdateAlbum = (props) => {
             <input type="text" id='title-inp'></input>
           </div>
 
+  
           <h4>User Id : {props.album.userId}</h4>
           <div className='inp-container'>
             Enter New UserId :
             <input type="number" id='userid-inp'></input>
           </div>
 
+  
           <Link to='/'><button type='submit' onClick={getUpdateData}>Save</button></Link>
         </div>
       </div>
