@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-//get album from album list and show using html css and js
+
+//get the album from the album list and show using html css and js
+
 const List = (props) => {
   return (
     <div className='list'>
