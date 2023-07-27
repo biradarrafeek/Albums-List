@@ -15,6 +15,7 @@ export default class App extends Component {
   }
 
   // this function call first time when app render
+  
   componentDidMount = async () => {
     const albums = await fetch('https://jsonplaceholder.typicode.com/albums')
       .then((response) => response.json())
@@ -34,7 +35,7 @@ export default class App extends Component {
   // }
 
 
-  //delete album function-----------------------------------------------------------------------------------
+  //delete album function=========================================================================================
   //this function take album id from albums list and then delete the album from albums list and update state
   deleteAlbumFromList = (id) => {
     fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, { method: 'DELETE', })
@@ -44,10 +45,10 @@ export default class App extends Component {
       albums: newAlbums,
     })
   }
-  //---------------------------------------------------------------------------------------------------------
+  //==============================================================================================================
 
 
-  //update album functions------------------------------------------------------------------------------------
+  //update album functions=========================================================================================
   //this function take album object from albums list and set state for update album
   setUpdateAlbum = async (album) => {
     this.setState({
@@ -84,9 +85,8 @@ export default class App extends Component {
     })
     alert("Update Successfully done")
   }
-  //--------------------------------------------------------------------------------------------------------
-
-  //add album function--------------------------------------------------------------------------------------
+ 
+  //add album function==============================================================================
   //this function take userid and title from input and then added to the bottom of the albums list
   addAlbumToList = (userId, title) => {
     fetch('https://jsonplaceholder.typicode.com/albums', {
@@ -112,9 +112,8 @@ export default class App extends Component {
     })
     alert("New Album added successfully in the bottom");
   }
-  //--------------------------------------------------------------------------------------------------------
-
-
+  //=================================================================================================
+  
   render() {
     return (
       <>
